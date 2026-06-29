@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Órdus Engenharia",
+  "description": "Plataforma de catálogo de projetos arquitetônicos, simulador de custo de obras, favoritos e painel administrativo para Órdus Engenharia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Overriding standard slate and amber palette to match Órdus Engenharia brand exactly */
+  --color-slate-900: #16222F; /* Midnight Slate Navy */
+  --color-slate-950: #0E1721; /* Deep Midnight */
+  --color-slate-800: #243545; /* Medium Navy Slate */
+  --color-slate-700: #3D4E5E;
+  --color-slate-600: #5C6E80;
+  --color-slate-500: #7C8F9E;
+  --color-slate-450: #99A9B8;
+  --color-slate-400: #A8B8C6;
+  --color-slate-300: #C2CED8;
+  --color-slate-200: #DBE3E9;
+  --color-slate-150: #E6ECF0;
+  --color-slate-100: #F0F4F7;
+  --color-slate-50: #F7FAFC;
+  
+  /* Brand Specific Colors */
+  --color-brand-blue: #16222F;
+  --color-brand-blue-dark: #0E1721;
+  --color-brand-gold: #C29047;
+  --color-brand-gold-dark: #AC7A34;
+  --color-brand-gold-light: #DFB277;
+}
+
+/* Custom scrollbars for a highly polished UI experience */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
