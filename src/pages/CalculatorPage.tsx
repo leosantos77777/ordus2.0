@@ -78,8 +78,8 @@ export default function CalculatorPage() {
           
           {/* Lado Esquerdo: Variáveis de Input */}
           <div className="xl:col-span-5 space-y-6 xl:border-r border-slate-100 pr-0 xl:pr-8 w-full min-w-0">
-            <h3 className="font-bold text-slate-800 text-sm uppercase tracking-wide">
-              Configurações da Obra
+            <h3 className="font-bold text-slate-800 text-sm tracking-wide">
+              Configurações da obra
             </h3>
 
             {/* Slider de Área */}
@@ -178,8 +178,8 @@ export default function CalculatorPage() {
 
           {/* Lado Direito: Resultados e Leads */}
           <div className="xl:col-span-7 w-full min-w-0">
-            <h3 className="font-bold text-slate-800 text-sm uppercase tracking-wide mb-4">
-              Estimativa de Investimento
+            <h3 className="font-bold text-slate-800 text-sm tracking-wide mb-4">
+              Estimativa de investimento
             </h3>
             
             <CalculatorResult

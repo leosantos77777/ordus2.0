@@ -346,19 +346,19 @@ export default function ProjectDetailPage({ favorites, onToggleFavorite }: Proje
             {/* Grid de Specs Rápidas */}
             <div className="grid grid-cols-2 gap-4 border-t border-slate-800 pt-5 text-xs font-mono text-slate-300">
               <div className="space-y-1">
-                <span className="text-[10px] text-slate-500 uppercase tracking-wider block">Área Construída</span>
+                <span className="text-[10px] text-slate-500 tracking-wider block">Área construída</span>
                 <span className="font-bold text-white text-sm">{project.builtArea} m²</span>
               </div>
               <div className="space-y-1">
-                <span className="text-[10px] text-slate-500 uppercase tracking-wider block">Lote Mínimo</span>
+                <span className="text-[10px] text-slate-500 tracking-wider block">Lote mínimo</span>
                 <span className="font-bold text-white text-sm">{project.lotWidth}x{project.lotLength}m</span>
               </div>
               <div className="space-y-1">
-                <span className="text-[10px] text-slate-500 uppercase tracking-wider block">Quartos / Suítes</span>
+                <span className="text-[10px] text-slate-500 tracking-wider block">Quartos / suítes</span>
                 <span className="font-bold text-white text-sm">{project.bedrooms} / {project.suites}</span>
               </div>
               <div className="space-y-1">
-                <span className="text-[10px] text-slate-500 uppercase tracking-wider block">Estacionamento</span>
+                <span className="text-[10px] text-slate-500 tracking-wider block">Vagas de garagem</span>
                 <span className="font-bold text-white text-sm">{project.parkingSpaces} vagas</span>
               </div>
             </div>

@@ -213,8 +213,8 @@ export default function CreatorPresetSelector({ onSelectPreset, activePresetName
     <div className="space-y-3.5">
       <div className="flex items-center gap-2">
         <Sparkles className="w-4.5 h-4.5 text-[#C29047]" />
-        <h4 className="text-xs font-bold font-mono uppercase tracking-wider text-slate-500">
-          Galeria de Projetos Brasileiros (Presets Cadastrados)
+        <h4 className="text-xs font-semibold font-mono tracking-wider text-slate-500">
+          Modelos predefinidos de projetos brasileiros
         </h4>
       </div>
 

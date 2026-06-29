@@ -92,7 +92,7 @@ export default function CreatorControlsPanel({ config, onChangeConfig }: Creator
       <div className="space-y-2 pb-4 border-b border-slate-800/80">
         <div className="flex items-center gap-2">
           <Eye className="w-4 h-4 text-[#C29047]" />
-          <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-400">Ponto de Vista</span>
+          <span className="text-[10px] font-mono font-bold tracking-wider text-slate-400">Ponto de vista</span>
         </div>
         <div className="grid grid-cols-3 gap-1.5">
           {([
@@ -106,7 +106,7 @@ export default function CreatorControlsPanel({ config, onChangeConfig }: Creator
                 key={v.value}
                 type="button"
                 onClick={() => updateField('viewMode', v.value)}
-                className={`py-1.5 rounded-lg border text-[10px] font-bold text-center cursor-pointer transition uppercase tracking-wider ${
+                className={`py-1.5 rounded-lg border text-[10px] font-bold text-center cursor-pointer transition tracking-wider ${
                   active
                     ? 'bg-[#C29047] border-[#C29047] text-white font-black'
                     : 'bg-slate-950/40 border-slate-800 hover:bg-slate-800 text-slate-400'
@@ -161,7 +161,7 @@ export default function CreatorControlsPanel({ config, onChangeConfig }: Creator
 
             {/* Brazilian Standards of Lots */}
             <div className="space-y-2 pt-2">
-              <span className="block text-[9px] font-bold text-slate-400 uppercase font-mono">Padrões Brasileiros de Lotes</span>
+              <span className="block text-[9px] font-bold text-slate-400 font-mono">Padrões brasileiros de lotes</span>
               <div className="flex gap-1.5 flex-wrap">
                 {[
                   { label: '5x25 (Urbano)', w: 5, l: 25 },

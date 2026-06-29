@@ -360,15 +360,15 @@ e geração de orçamentos quantitativos via SINAPI.
         <div className="absolute bottom-[-10%] left-[-10%] w-[35%] aspect-square rounded-full bg-[#3B82F6]/5 blur-[120px] pointer-events-none" />
 
         <div className="max-w-3xl space-y-4 relative">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono text-[#C29047] font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono text-[#C29047] font-bold tracking-wider">
             <Box className="w-4.5 h-4.5 text-[#C29047]" />
-            Módulo Paramétrico Realista
+            Módulo paramétrico realista
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black font-sans tracking-tight">
             Estúdio 3D <span className="text-[#C29047] font-medium font-sans">Órdus</span>
           </h1>
           <p className="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-2xl">
-            Projete maquetes conceituais realistas baseadas em residências contemporâneas urbanas e rústicas brasileiras. Regule as dimensões do terreno, recuo de zoneamento municipal, garagens, jardins e gere memoriais descritivos detalhados para envio direto aos engenheiros da <b>Órdus Engenharia</b>.
+            Configure maquetes conceituais em tempo real baseadas na arquitetura contemporânea brasileira. Regule dimensões de lote, recuos de zoneamento municipal e gere memoriais descritivos para análise técnica imediata da nossa engenharia.
           </p>
         </div>
       </div>
@@ -445,17 +445,17 @@ e geração de orçamentos quantitativos via SINAPI.
             <div className="absolute top-4 left-4 right-4 z-10 flex items-center justify-between pointer-events-none select-none">
               
               <div className="bg-slate-950/85 backdrop-blur-md rounded-xl p-3 border border-slate-800/80 max-w-[70%]">
-                <span className="text-[10px] font-mono font-bold text-[#C29047] uppercase tracking-wider block mb-0.5">
-                  Estúdio Técnico Órdus
+                <span className="text-[10px] font-mono font-bold text-[#C29047] tracking-wider block mb-0.5">
+                  Estúdio técnico Órdus
                 </span>
                 <span className="text-white text-xs sm:text-sm font-bold block truncate">
-                  {config.name || `Modelo Customizado: ${config.style.toUpperCase()}`}
+                  {config.name || `Modelo Customizado: ${config.style}`}
                 </span>
               </div>
 
               <div className="bg-slate-950/85 backdrop-blur-md rounded-xl px-3 py-1.5 border border-slate-800/80 text-right">
-                <span className="text-[8px] sm:text-[10px] font-mono text-slate-400 block uppercase">
-                  Área do Lote
+                <span className="text-[8px] sm:text-[10px] font-mono text-slate-400 block">
+                  Área do lote
                 </span>
                 <span className="text-white text-[11px] sm:text-xs font-mono font-bold block">
                   {config.lotWidth * config.lotLength} m² ({config.lotWidth}x{config.lotLength}m)
@@ -492,8 +492,8 @@ e geração de orçamentos quantitativos via SINAPI.
           {/* DYNAMIC RESUMO DO ESTUDO GERADO (ALADO/ABAIXO DO PREVIEW) */}
           <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-xs space-y-4">
             <div className="flex justify-between items-center pb-3 border-b border-slate-100">
-              <h4 className="font-extrabold text-sm text-slate-950 uppercase tracking-tight font-sans">
-                Resumo Técnico do Estudo Gerado
+              <h4 className="font-extrabold text-sm text-slate-950 tracking-tight font-sans">
+                Resumo técnico do estudo gerado
               </h4>
               <span className="text-[9px] font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded-md font-bold">
                 ESTADO: PRONTO PARA VALIDAÇÃO
@@ -502,27 +502,27 @@ e geração de orçamentos quantitativos via SINAPI.
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-3.5 text-xs">
               <div>
-                <span className="block text-[10px] text-slate-400 font-mono uppercase">Loteamento</span>
+                <span className="block text-[10px] text-slate-400 font-mono">Loteamento</span>
                 <span className="font-bold text-slate-800">{config.lotWidth} x {config.lotLength}m ({config.lotWidth * config.lotLength} m²)</span>
               </div>
               <div>
-                <span className="block text-[10px] text-slate-400 font-mono uppercase">Recuo de Fachada</span>
+                <span className="block text-[10px] text-slate-400 font-mono">Recuo de fachada</span>
                 <span className="font-bold text-slate-800">{config.frontSetback ?? 5} m</span>
               </div>
               <div>
-                <span className="block text-[10px] text-slate-400 font-mono uppercase">Área Construída</span>
+                <span className="block text-[10px] text-slate-400 font-mono">Área construída</span>
                 <span className="font-bold text-[#C29047]">{config.builtArea} m² estimados</span>
               </div>
               <div>
-                <span className="block text-[10px] text-slate-400 font-mono uppercase">Estilo Escolhido</span>
+                <span className="block text-[10px] text-slate-400 font-mono">Estilo escolhido</span>
                 <span className="font-bold text-slate-800 capitalize">{config.style.replace('_', ' ')}</span>
               </div>
               <div>
-                <span className="block text-[10px] text-slate-400 font-mono uppercase">Pavimentos / Vagas</span>
+                <span className="block text-[10px] text-slate-400 font-mono">Pavimentos / vagas</span>
                 <span className="font-bold text-slate-800">{config.floors} Pav. / {config.parkingSpaces} vagas</span>
               </div>
               <div>
-                <span className="block text-[10px] text-slate-400 font-mono uppercase">Dormitórios / WC</span>
+                <span className="block text-[10px] text-slate-400 font-mono">Dormitórios / WC</span>
                 <span className="font-bold text-slate-800">{config.bedrooms} Q / {config.suites} Suítes / {config.bathrooms} WC</span>
               </div>
             </div>
@@ -551,19 +551,19 @@ e geração de orçamentos quantitativos via SINAPI.
             </h4>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-medium">
               <div className="bg-white border border-slate-150 p-3 rounded-2xl">
-                <span className="block text-[10px] uppercase font-mono text-slate-400 mb-0.5">Recuo Frontal</span>
+                <span className="block text-[10px] font-mono text-slate-400 mb-0.5">Recuo frontal</span>
                 <span className="font-bold text-slate-800">Definido {config.frontSetback ?? 5}m (Mín 3,0m)</span>
               </div>
               <div className="bg-white border border-slate-150 p-3 rounded-2xl">
-                <span className="block text-[10px] uppercase font-mono text-slate-400 mb-0.5">Taxa Zona Urbana</span>
+                <span className="block text-[10px] font-mono text-slate-400 mb-0.5">Taxa zona urbana</span>
                 <span className="font-bold text-slate-800">Mínimo 15%</span>
               </div>
               <div className="bg-white border border-slate-150 p-3 rounded-2xl">
-                <span className="block text-[10px] uppercase font-mono text-slate-400 mb-0.5">Recuo de Fundação</span>
+                <span className="block text-[10px] font-mono text-slate-400 mb-0.5">Recuo de fundação</span>
                 <span className="font-bold text-[#C29047]">Apropriado</span>
               </div>
               <div className="bg-white border border-slate-150 p-3 rounded-2xl">
-                <span className="block text-[10px] uppercase font-mono text-slate-400 mb-0.5">Aproveitamento</span>
+                <span className="block text-[10px] font-mono text-slate-400 mb-0.5">Aproveitamento</span>
                 <span className="font-bold text-slate-800">Coeficiente: 1.5</span>
               </div>
             </div>

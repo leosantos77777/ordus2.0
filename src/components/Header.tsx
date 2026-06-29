@@ -13,16 +13,12 @@ export default function Header({ favoritesCount }: HeaderProps) {
   const navigate = useNavigate();
 
   const navItems = [
-    { path: '/', label: 'Início', icon: Home },
+    { path: '/dashboard', label: 'Início', icon: Home },
     { path: '/projetos', label: 'Biblioteca', icon: FileText, alternativePaths: [] },
     { path: '/calculadora-custo-obra', label: 'Simulador', icon: Calculator },
     { path: '/criador-3d', label: 'Estúdio 3D', icon: Box },
     { path: '/favoritos', label: 'Favoritos', icon: Heart, badge: favoritesCount },
   ];
-
-  if (authRepository.isAdminAuthenticated()) {
-    navItems.push({ path: '/admin', label: 'Painel Admin', icon: Settings });
-  }
 
   const handleNavClick = (path: string) => {
     navigate(path);
@@ -36,10 +32,10 @@ export default function Header({ favoritesCount }: HeaderProps) {
           
           {/* Logo Brand Link */}
           <div
-            onClick={() => handleNavClick('/')}
+            onClick={() => handleNavClick('/dashboard')}
             className="flex items-center gap-2.5 cursor-pointer select-none group"
           >
-            <Logo className="w-10 h-10 sm:w-12 sm:h-12" withLabel={true} />
+            <Logo className="h-[44px] sm:h-[56px] w-auto" />
           </div>
 
           {/* Navegação principal */}

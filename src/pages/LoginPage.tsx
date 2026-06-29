@@ -14,7 +14,7 @@ export default function LoginPage() {
   useEffect(() => {
     // If already authenticated, go to Dashboard directly
     if (authRepository.isUserAuthenticated()) {
-      navigate('/', { replace: true });
+      navigate('/dashboard', { replace: true });
     }
   }, [navigate]);
 
@@ -29,7 +29,7 @@ export default function LoginPage() {
 
     const success = authRepository.login(username, password);
     if (success) {
-      navigate('/', { replace: true });
+      navigate('/dashboard', { replace: true });
     } else {
       setErrorMsg('Credenciais inválidas. Use o acesso de demonstração.');
     }
@@ -38,7 +38,7 @@ export default function LoginPage() {
   const handleDemoLogin = () => {
     const success = authRepository.login('cliente', '123');
     if (success) {
-      navigate('/', { replace: true });
+      navigate('/dashboard', { replace: true });
     }
   };
 
@@ -52,11 +52,8 @@ export default function LoginPage() {
         
         {/* Brand header outside the card */}
         <div className="text-center flex flex-col items-center gap-1.5 select-none">
-          <Logo className="w-16 h-16 sm:w-20 sm:h-20" />
-          <h2 className="text-2xl font-black tracking-tight text-white font-sans mt-3">
-            ÓRDUS <span className="text-[#C29047] font-light">Engenharia</span>
-          </h2>
-          <p className="text-[10px] sm:text-xs text-slate-400 font-mono tracking-widest uppercase">
+          <Logo className="h-[96px] sm:h-[110px] w-auto" />
+          <p className="text-[10px] sm:text-xs text-slate-400 font-mono tracking-widest uppercase mt-3">
             Plataforma Corporativa de Projetos
           </p>
         </div>

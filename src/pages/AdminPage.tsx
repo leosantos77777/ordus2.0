@@ -110,7 +110,7 @@ export default function AdminPage() {
       showToast('Acesso administrativo autenticado.', 'success');
       loadData();
     } else {
-      setLoginError('Credenciais inválidas. Use "admin" e senha "123" para o MVP.');
+      setLoginError('Credenciais administrativas inválidas. Verifique com a equipe de TI da Órdus.');
     }
   };
 
@@ -349,7 +349,7 @@ export default function AdminPage() {
 
           <div className="bg-slate-50 rounded-xl p-3 text-[11px] text-slate-500 border border-slate-100 flex items-center gap-2">
             <AlertTriangle className="w-4 h-4 text-[#C29047] shrink-0" />
-            <span>Camada protegida por AuthRepository. Digite <b>admin</b> e <b>123</b> para testar o MVP.</span>
+            <span>Camada restrita. Acesse utilizando a conta administrativa cadastrada no repositório de segurança Órdus.</span>
           </div>
 
           <button
@@ -413,7 +413,7 @@ export default function AdminPage() {
             <Database className="w-5 h-5 text-[#C29047]" />
           </div>
           <div>
-            <span className="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">Projetos Ativos</span>
+            <span className="text-[10px] font-bold text-slate-400 block tracking-wider">Projetos ativos</span>
             <strong className="text-xl font-bold font-mono text-slate-900">{projects.length}</strong>
           </div>
         </div>
@@ -423,7 +423,7 @@ export default function AdminPage() {
             <Inbox className="w-5 h-5" />
           </div>
           <div>
-            <span className="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">Novas Solicitações</span>
+            <span className="text-[10px] font-bold text-slate-400 block tracking-wider">Novas solicitações</span>
             <strong className="text-xl font-bold font-mono text-blue-600">
               {leads.filter((l) => !l.status || l.status === 'Novo').length}
             </strong>
@@ -435,7 +435,7 @@ export default function AdminPage() {
             <Calculator className="w-5 h-5" />
           </div>
           <div>
-            <span className="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">Simulações de Custo</span>
+            <span className="text-[10px] font-bold text-slate-400 block tracking-wider">Simulações de custo</span>
             <strong className="text-xl font-bold font-mono text-slate-900">
               {leads.filter((l) => l.type === 'calculadora' || l.type === 'simulacao_custo').length}
             </strong>
@@ -447,7 +447,7 @@ export default function AdminPage() {
             <Box className="w-5 h-5" />
           </div>
           <div>
-            <span className="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">Estudos 3D Enviados</span>
+            <span className="text-[10px] font-bold text-slate-400 block tracking-wider">Estudos 3D enviados</span>
             <strong className="text-xl font-bold font-mono text-slate-900">
               {leads.filter((l) => l.type === 'estudo_3d').length}
             </strong>
@@ -459,7 +459,7 @@ export default function AdminPage() {
             <TrendingUp className="w-5 h-5" />
           </div>
           <div>
-            <span className="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">Em Andamento / Proposta</span>
+            <span className="text-[10px] font-bold text-slate-400 block tracking-wider">Em andamento / Propostas</span>
             <strong className="text-xl font-bold font-mono text-emerald-600">
               {leads.filter((l) => l.status === 'Em análise' || l.status === 'Proposta enviada').length}
             </strong>
