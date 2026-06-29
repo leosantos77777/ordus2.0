@@ -239,7 +239,7 @@ export default function LandingPage() {
             
             {/* Logo Link */}
             <div className="flex items-center gap-2 select-none">
-              <Logo className="h-[44px] sm:h-[56px] w-auto" />
+              <Logo className="h-[48px] sm:h-[56px] w-auto" />
             </div>
 
             {/* Navigation Links */}
@@ -387,82 +387,51 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              {/* Blueprint Simulation card */}
-              <div className="bg-[#16222F] border border-slate-800 rounded-3xl p-6 shadow-2xl relative overflow-hidden">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-3.5 mb-4">
+              {/* Studio 3D Luxury House Render Showcase */}
+              <div className="bg-[#16222F] border border-slate-800 rounded-3xl p-5 shadow-2xl relative overflow-hidden">
+                <div className="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
                   <div className="flex items-center gap-1.5">
-                    <div className="w-2.5 h-2.5 rounded-full bg-rose-500" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span className="text-[10px] text-slate-300 font-mono tracking-wider">ORDUS_STUDIO_3D_RENDER.RAW</span>
                   </div>
-                  <span className="text-[10px] text-slate-400 font-mono">ORDUS_ENGINEERING_LAYOUT_MODEL.DWG</span>
+                  <span className="text-[9px] text-[#C29047] font-mono bg-[#C29047]/10 px-2 py-0.5 rounded border border-[#C29047]/20 uppercase">
+                    Modelo Ativo
+                  </span>
                 </div>
 
-                {/* Abstract geometric wireframe mock */}
-                <div className="aspect-[4/3] w-full rounded-2xl bg-[#090F16] border border-slate-800 relative p-4 flex flex-col justify-between overflow-hidden">
+                {/* Realist luxury 3D house image render */}
+                <div className="aspect-[4/3] w-full rounded-2xl bg-slate-950 border border-slate-800 relative overflow-hidden group">
+                  <img
+                    src="/luxury-modern-house-3d.jpg"
+                    alt="Modelo 3D Residencial Alto Padrão - Órdus Engenharia"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                    referrerPolicy="no-referrer"
+                  />
                   
-                  {/* Decorative drafting grid */}
-                  <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:15px_15px]" />
+                  {/* Subtle layered layout grids of engineering context */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
                   
-                  {/* Drafting wireframe graphics */}
-                  <div className="absolute inset-4 border border-dashed border-[#C29047]/20 flex items-center justify-center rounded-lg">
-                    <div className="w-4/5 h-4/5 border border-slate-800 flex items-center justify-center relative">
-                      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(194,144,71,0.08),transparent_80%)]" />
-                      
-                      {/* Lines crosshair */}
-                      <div className="absolute inset-y-0 left-1/2 w-[1px] bg-slate-800 border-dashed" />
-                      <div className="absolute inset-x-0 top-1/2 h-[1px] bg-slate-800 border-dashed" />
-                      
-                      {/* Structural foundation mockup shapes */}
-                      <div className="absolute w-24 h-24 border border-dashed border-[#C29047]/60 rounded-sm transform rotate-45 flex items-center justify-center">
-                        <div className="w-16 h-16 border border-dashed border-[#C29047]/40 rounded-sm" />
-                      </div>
-
-                      {/* Pulsing structural nodes */}
-                      <span className="absolute w-2 h-2 bg-[#C29047] rounded-full top-[18%] left-[18%] animate-pulse-ring" />
-                      <span className="absolute w-2 h-2 bg-[#C29047] rounded-full bottom-[18%] right-[18%] animate-pulse-ring" />
-                      <span className="absolute w-2 h-2 bg-blue-400 rounded-full top-[18%] right-[18%] animate-pulse-ring" />
-                      <span className="absolute w-2 h-2 bg-blue-400 rounded-full bottom-[18%] left-[18%] animate-pulse-ring" />
-
-                      <div className="absolute w-6 h-6 bg-slate-900 border border-slate-700 top-2 left-2 flex items-center justify-center text-[7px] text-[#C29047] font-mono">F1</div>
-                      <div className="absolute w-6 h-6 bg-slate-900 border border-slate-700 bottom-2 right-2 flex items-center justify-center text-[7px] text-[#C29047] font-mono">F2</div>
-                      <div className="absolute w-6 h-6 bg-slate-900 border border-slate-700 top-2 right-2 flex items-center justify-center text-[7px] text-[#C29047] font-mono">F3</div>
-                      <div className="absolute w-6 h-6 bg-slate-900 border border-slate-700 bottom-2 left-2 flex items-center justify-center text-[7px] text-[#C29047] font-mono">F4</div>
-                    </div>
-                  </div>
-
-                  {/* Header labels */}
-                  <div className="z-10 flex justify-between items-start">
-                    <span className="text-[9px] font-mono bg-slate-900/90 text-slate-300 px-2 py-0.5 rounded border border-slate-800">
-                      VÃO LIVRE: 6.80m
+                  <div className="absolute bottom-3 left-3 right-3 z-10 flex justify-between items-end">
+                    <span className="text-[9px] font-mono text-white bg-slate-900/90 px-2 py-1 rounded border border-slate-800/60 backdrop-blur-xs">
+                      Residência Alto Padrão - 420m²
                     </span>
-                    <span className="text-[9px] font-mono bg-[#C29047]/10 text-[#C29047] px-2 py-0.5 rounded border border-[#C29047]/30">
-                      CONCRETO: C30
+                    <span className="text-[9px] font-mono text-emerald-400 bg-emerald-950/90 px-2 py-1 rounded border border-emerald-800/60 backdrop-blur-xs">
+                      Volumetria 3D Realista
                     </span>
                   </div>
-
-                  {/* Bottom labels */}
-                  <div className="z-10 flex justify-between items-end">
-                    <span className="text-[8px] text-slate-500 font-mono">ESCALA 1:50</span>
-                    <span className="text-[9px] font-mono text-emerald-400 bg-emerald-950/85 px-1.5 py-0.5 rounded">
-                      Estabilidade Garantida
-                    </span>
-                  </div>
-
                 </div>
 
-                {/* Floating Metrics */}
+                {/* Floating Technical Metrics */}
                 <div className="mt-4 grid grid-cols-2 gap-3">
-                  <div className="bg-slate-950/40 p-3 rounded-xl border border-slate-800">
-                    <span className="text-[10px] text-slate-400 font-mono block">Cálculo de Carga</span>
-                    <span className="text-xs font-bold text-white block">Precisão Absoluta</span>
+                  <div className="bg-slate-950/40 p-3 rounded-xl border border-slate-800 flex flex-col justify-between">
+                    <span className="text-[10px] text-slate-400 font-mono block uppercase">Análise de Cargas</span>
+                    <span className="text-xs font-bold text-white block mt-0.5">Compatibilização BIM</span>
                   </div>
-                  <div className="bg-slate-950/40 p-3 rounded-xl border border-slate-800">
-                    <span className="text-[10px] text-slate-400 font-mono block">Corte e Dobra de Aço</span>
-                    <span className="text-xs font-bold text-[#C29047] block">Tolerância Zero</span>
+                  <div className="bg-slate-950/40 p-3 rounded-xl border border-slate-800 flex flex-col justify-between">
+                    <span className="text-[10px] text-slate-400 font-mono block uppercase">Dimensionamento</span>
+                    <span className="text-xs font-bold text-[#C29047] block mt-0.5">Otimização Estrutural</span>
                   </div>
                 </div>
-
               </div>
 
             </div>
@@ -1473,7 +1442,7 @@ export default function LandingPage() {
           
           <div className="md:col-span-5 space-y-3">
             <div className="mb-2 flex items-center">
-              <Logo className="h-[70px] w-auto" />
+              <Logo className="h-[70px] w-auto" variant="dark-bg" />
             </div>
             <p className="leading-relaxed text-slate-400 pr-4">
               Plataforma privada da Órdus Engenharia para estudos técnicos, simulações de obra e acompanhamento de projetos.

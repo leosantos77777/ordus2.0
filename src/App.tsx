@@ -111,7 +111,7 @@ function AppContent() {
             
             <div className="md:col-span-5 space-y-3">
               <div className="mb-2 flex items-center">
-                <Logo className="h-[70px] w-auto" />
+                <Logo className="h-[70px] w-auto" variant="dark-bg" />
               </div>
               <p className="leading-relaxed text-slate-400 pr-4">
                 Plataforma privada da Órdus Engenharia para estudos técnicos, simulações de obra e acompanhamento de projetos.

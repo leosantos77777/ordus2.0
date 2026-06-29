@@ -52,7 +52,7 @@ export default function LoginPage() {
         
         {/* Brand header outside the card */}
         <div className="text-center flex flex-col items-center gap-1.5 select-none">
-          <Logo className="h-[96px] sm:h-[110px] w-auto" />
+          <Logo className="h-[96px] sm:h-[110px] w-auto" variant="dark-bg" />
           <p className="text-[10px] sm:text-xs text-slate-400 font-mono tracking-widest uppercase mt-3">
             Plataforma Corporativa de Projetos
           </p>
